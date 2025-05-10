@@ -1,0 +1,17 @@
+Manoel de Souza Serafim
+mkdir tarefa2
+cd tarefa2
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead
+cd curso-branchs-ifrn-ead
+git add texto.txt
+git commit -m "Adiciona o arquivo texto.txt"
+git checkout -b feature-1
+git add texto.txt
+git commit -m "Altenaração na mesma linha do feature na main"
+git checkout main
+git add texto.txt
+git commit -m "Altera o conteúdo do texto.txt na main"
+git merge feature-1
+git add texto.txt
+git commit -m "Resovido o conflito de merge entre main e feature-1"
+git checkout -b add-comandos
